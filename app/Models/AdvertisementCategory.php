@@ -6,28 +6,38 @@ use Illuminate\Database\Eloquent\Model;
 
 class AdvertisementCategory extends Model
 {
-    const GRAPHICS_DESIGN = 1;
-    const DIGITAL_MARKETING = 2;
-    const WRITING_TRANSLATION = 3;
-    const VIDEO_ANIMATION = 4;
-    const MUSIC_AUDIO = 5;
-    const PROGRAMMING_TECH = 6;
-    const BUSINESS = 7;
-    const LIFESTYLES = 8;
-    const INDUSTRIES = 9;
-    const SELL_BUY = 10;
+    const APPAREL_ACCESSORIES = 1;
+    const STYLE_FASHION = 2;
+    const HOME_GARDEN = 3;
+    const SPORT = 4;
+    const HEALTH_WELLNESS = 5;
+    const CHILDREN_INFANTS = 6;
+    const PETS_SUPPLIES = 7;
+    const ELECTRONICS = 8;
+    const DESIGN = 9;
+    const TECHNOLOGY = 10;
+    const LABOR = 11;
+    const CONSULTANCY = 12;
+    const EDUCATION = 13;
+    const SANITATION = 14;
+    const ELECTRICAL_PLUMBING = 15;
 
     const ALL_CATEGORIES = [
-        self::GRAPHICS_DESIGN,
-        self::DIGITAL_MARKETING,
-        self::WRITING_TRANSLATION,
-        self::VIDEO_ANIMATION,
-        self::MUSIC_AUDIO,
-        self::PROGRAMMING_TECH,
-        self::BUSINESS,
-        self::LIFESTYLES,
-        self::INDUSTRIES,
-        self::SELL_BUY
+        self::APPAREL_ACCESSORIES,
+        self::STYLE_FASHION,
+        self::HOME_GARDEN,
+        self::SPORT,
+        self::HEALTH_WELLNESS,
+        self::CHILDREN_INFANTS,
+        self::PETS_SUPPLIES,
+        self::ELECTRONICS,
+        self::DESIGN,
+        self::TECHNOLOGY,
+        self::LABOR,
+        self::CONSULTANCY,
+        self::EDUCATION,
+        self::SANITATION,
+        self::ELECTRICAL_PLUMBING
     ];
 
     protected $keyType = 'integer';

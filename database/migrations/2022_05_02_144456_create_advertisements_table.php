@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('advertisements', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->string('title');
+            $table->string('category_type');
+            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('advertisement_category_id');
+            $table->unsignedBigInteger('advertisement_status_id');
+            $table->longText('description');
+            $table->dateTime('starts_at');
+            $table->dateTime('ends_at');
             $table->timestamps();
         });
     }
