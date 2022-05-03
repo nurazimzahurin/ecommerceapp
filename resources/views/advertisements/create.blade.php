@@ -46,7 +46,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="category">Category</label>
-                                <input type="text" id="category" name="category" class="form-control">
+                                <select id="category" name="category" class="form-control custom-select">
+                                    <option selected disabled>Select one</option>
+                                    @foreach ($advertisementCategories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
@@ -56,8 +61,9 @@
                                 <label for="status">Status</label>
                                 <select id="status" name="status" class="form-control custom-select">
                                     <option selected disabled>Select one</option>
-                                    <option value="0">Inactive</option>
-                                    <option value="1">Active</option>
+                                    @foreach ($advertisementStatuses as $status)
+                                    <option value="{{ $status->id }}">{{ $status->name }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="form-group">

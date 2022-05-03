@@ -16,63 +16,93 @@ class AdvertisementCategorySeeder extends Seeder
     public function run()
     {
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::GRAPHICS_DESIGN
+            'id' => AdvertisementCategory::APPAREL_ACCESSORIES
         ],[
-            'name' => 'Graphics & Design'
+            'name' => 'Apparel & Accessories'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::DIGITAL_MARKETING
+            'id' => AdvertisementCategory::STYLE_FASHION
         ],[
-            'name' => 'Digital Marketing'
+            'name' => 'Style & Fashion'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::WRITING_TRANSLATION
+            'id' => AdvertisementCategory::HOME_GARDEN
         ],[
-            'name' => 'Writing & Translation'
+            'name' => 'Home & Gardens'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::VIDEO_ANIMATION
+            'id' => AdvertisementCategory::SPORT
         ],[
-            'name' => 'Video & Animation'
+            'name' => 'Sport Accessories & Equipments'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::MUSIC_AUDIO
+            'id' => AdvertisementCategory::HEALTH_WELLNESS
         ],[
-            'name' => 'Music & Audio'
+            'name' => 'Health & Wellness'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::PROGRAMMING_TECH
+            'id' => AdvertisementCategory::CHILDREN_INFANTS
         ],[
-            'name' => 'Programming & Tech'
+            'name' => 'Children & Infants'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::BUSINESS
+            'id' => AdvertisementCategory::PETS_SUPPLIES
         ],[
-            'name' => 'Business'
+            'name' => 'Pet Supplies'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::LIFESTYLES
+            'id' => AdvertisementCategory::ELECTRONICS
         ],[
-            'name' => 'Lifestyles'
+            'name' => 'Electronics'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::INDUSTRIES
+            'id' => AdvertisementCategory::DESIGN
         ],[
-            'name' => 'Industries'
+            'name' => 'Design'
         ]);
 
         AdvertisementCategory::firstOrCreate([
-            'id' => AdvertisementCategory::SELL_BUY
+            'id' => AdvertisementCategory::TECHNOLOGY
         ],[
-            'name' => 'Buy and Sell'
+            'name' => 'Technology'
+        ]);
+
+        AdvertisementCategory::firstOrCreate([
+            'id' => AdvertisementCategory::LABOR
+        ],[
+            'name' => 'Labor'
+        ]);
+
+        AdvertisementCategory::firstOrCreate([
+            'id' => AdvertisementCategory::CONSULTANCY
+        ],[
+            'name' => 'Consultancy'
+        ]);
+
+        AdvertisementCategory::firstOrCreate([
+            'id' => AdvertisementCategory::EDUCATION
+        ],[
+            'name' => 'Education'
+        ]);
+
+        AdvertisementCategory::firstOrCreate([
+            'id' => AdvertisementCategory::SANITATION
+        ],[
+            'name' => 'Sanitation'
+        ]);
+
+        AdvertisementCategory::firstOrCreate([
+            'id' => AdvertisementCategory::ELECTRICAL_PLUMBING
+        ],[
+            'name' => 'Electrical & Plumbing'
         ]);
     }
 }
